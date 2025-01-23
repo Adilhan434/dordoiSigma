@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
   background-color: #dfdff0;
   font-family: "General Sans", sans-serif;
+  overflow-x: hidden;
+}
+div::-webkit-scrollbar {
+  display: none; /* для Chrome, Safari, Edge */
 }
 
 @layer base {

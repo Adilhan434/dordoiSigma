@@ -3,8 +3,12 @@ import gsap from "gsap";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
-
-import Button from "./Button";
+import { BrowserRouter, Routes, Route,Link } from "react-router-dom";
+import Contact from "./Contact";
+import About from "./About";
+import Features from "./Features";
+import Hero from "./Hero";
+import Footer from "./Footer";
 
 const navItems = ["Dordoi", "Plaza", "Football", "University", "Contact"];
 
@@ -72,22 +76,22 @@ const NavBar = () => {
           {/* Logo and Product button */}
           <div className="flex items-center gap-7">
             <img src="/img/logo.png" alt="logo" className="w-10 rounded-full border border-gray-300 shadow-2xl" />
-
-            
+             <BrowserRouter>
+             <Link to="/"><p className="">dordoi</p></Link>
+             <Link to="/about">about</Link>
+              <Routes>
+                <Route path="/" element={<Hero/>}></Route>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/about" element={<About/>}/>
+                <Route path="/features" element={<Features/>}/>
+              </Routes>
+            </BrowserRouter>
           </div>
 
           {/* Navigation Links and Audio Button */}
           <div className="flex h-full items-center">
             <div className="hidden md:block">
-              {navItems.map((item, index) => (
-                <a
-                  key={index}
-                  href={`#${item.toLowerCase()}`}
-                  className="nav-hover-btn"
-                >
-                  {item}
-                </a>
-              ))}
+              
             </div>
 
             <button
