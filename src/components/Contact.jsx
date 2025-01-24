@@ -10,7 +10,7 @@ const ImageClipBox = ({ src, clipClass }) => (
 const Contact = () => {
   return (
     <div id="contact" className="my-20 min-h-96 w-screen bg-white px-10">
-      <div className="relative rounded-lg bg-black py-24 text-blue-50 sm:overflow-hidden">
+      <div className="h-auto relative rounded-lg bg-black pt-[10px] pb-[20px] text-blue-50 sm:overflow-hidden">
         <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden sm:block lg:left-20 lg:w-96">
           <ImageClipBox
             src="/img/contact-1.webp"
@@ -18,16 +18,18 @@ const Contact = () => {
           />
           <ImageClipBox
             src="/img/contact-2.webp"
-            clipClass="contact-clip-path-2 lg:translate-y-40 translate-y-60 mt-[-50px]"
+            clipClass="contact-clip-path-2 lg:translate-y-40 translate-y-60 mt-[-115px]"
           />
         </div>
-        <div className="w-auto h-auto">
+        {/* <div className="w-[250px]">
+          <img src="/img/swordman.webp" alt="" className="w-[250px] rounded mt-[-90px] mb-[-50px]" />
+        </div> */}
+        <div className="w-auto mt-[100px] ml-[170px]">
           <ImageClipBox
             src="/img/swordman.webp"
-            clipClass="w-auto h-auto absolute md:scale-125"
+            clipClass="w-[200px] h-[0px] absolute md:scale-125 mt-[53px ] mb-[0px]"
           />
         </div>
-
         <div className="absolute -top-40 left-20 w-60 sm:top-1/2 md:left-auto md:right-10 lg:top-20 lg:w-80">
           <ImageClipBox
             src="/img/swordman-partial.webp"
