@@ -9,11 +9,12 @@ const Carousel = () => {
           <img src="https://salymbekov.com/wp-content/uploads/2023/02/bc0b2640-1920x1008.jpg" alt="Slide 1" />
         </div>
         <div className="carousel-slide">
-          <img src="https://salymbekov.com/wp-content/uploads/2023/02/bc0b2640-1920x1008.jpg" alt="Slide 2" />
+          <img src="https://salymbekov.com/wp-content/uploads/2023/02/bc0b2640-1920x1008.jpg" alt="Slide 1" />
         </div>
         <div className="carousel-slide">
-          <img src="https://salymbekov.com/wp-content/uploads/2022/07/bc0b3685.jpg" alt="Slide 3" />
+          <img src="https://salymbekov.com/wp-content/uploads/2023/02/bc0b2640-1920x1008.jpg" alt="Slide 2" />
         </div>
+        
       </div>
     </div>
   );

@@ -21,6 +21,12 @@ const Contact = () => {
             clipClass="contact-clip-path-2 lg:translate-y-40 translate-y-60 mt-[-50px]"
           />
         </div>
+        <div className="w-auto h-auto">
+          <ImageClipBox
+            src="/img/swordman.webp"
+            clipClass="w-auto h-auto absolute md:scale-125"
+          />
+        </div>
 
         <div className="absolute -top-40 left-20 w-60 sm:top-1/2 md:left-auto md:right-10 lg:top-20 lg:w-80">
           <ImageClipBox
