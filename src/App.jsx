@@ -5,6 +5,7 @@ import University from "./pages/University";
 import Plaza from "./pages/Plaza";
 
 function App() {
+  
   return (
     <main className="overflow-x-hidden min-h-screen relative">
       <Router>
@@ -22,16 +23,16 @@ function App() {
               </Link></div>
               <div className="flex gap-10 mr-[30px]"> 
               <Link to="/">
-                <p className="text-lg font-bold text-white  text-shadow-lg">Dordoi</p>
+                <p className="nav_text text-lg font-bold text-white  text-shadow-lg">Dordoi</p>
               </Link>
               <Link to="/football">
-                <p className="text-lg font-bold text-white  text-shadow-lg">Football</p>
+                <p className="nav_text text-lg font-bold text-white  text-shadow-lg">Football</p>
               </Link>
               <Link to="/university">
-                <p className="text-lg font-bold text-white  text-shadow-lg">University</p>
+                <p className="nav_text text-lg font-bold text-white  text-shadow-lg">University</p>
               </Link>
               <Link to="/plaza">
-                <p className="text-lg font-bold text-white  text-shadow-lg">Plaza</p>
+                <p className="nav_text text-lg font-bold text-white  text-shadow-lg">Plaza</p>
               </Link></div>
             </div>
           </div>

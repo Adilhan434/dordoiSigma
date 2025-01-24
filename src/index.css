@@ -7,7 +7,7 @@
 body {
   width: 100dvw;
   overflow-x: hidden;
-  background-color: #dfdff0;
+  background-color: #fff;
   font-family: "General Sans", sans-serif;
   overflow-x: hidden;
 }
@@ -108,7 +108,8 @@ div::-webkit-scrollbar {
   }
 
   .story-img-container {
-    @apply relative md:h-dvh h-[90vh] w-full;
+    @apply relative h-[90vh] w-full;
+    height: 74dvh;
     filter: url("#flt_tag");
   }
 
@@ -291,3 +292,8 @@ div::-webkit-scrollbar {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     color: rgb(223 223 240 / var(--tw-text-opacity));
 }
+.nav_text:hover{
+color: rgb(223, 223, 223);
+}.nav_text:active{
+  color: rgb(0, 174, 255);
+  }

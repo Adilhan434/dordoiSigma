@@ -1,5 +1,7 @@
 import { useState, useRef } from "react";
 import { TiLocationArrow } from "react-icons/ti";
+import Carousel from "./Carousel";
+import "./Feat.css";
 
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
@@ -79,7 +81,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
             onMouseMove={handleMouseMove}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
+            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-white uppercase text-white"
           >
             {/* Radial gradient hover effect */}
             <div
@@ -99,30 +101,19 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 };
 
 const Features = () => (
-  <section className=" bg-[#919191] pb-52" >
-    <div className="container mx-auto px-3 md:px-10">
-      <div className="px-5 py-32">
-        <p className="font-circular-web text-lg text-blue-50">
-        Dordoi Company in Kyrgyzstan
-        </p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-        is a leader in wholesale trade and logistics, offering business opportunities and high-quality services. It supports entrepreneurs and contributes to the economic growth of the region.
-        </p>
-      </div>
-
-      <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
-      </BentoTilt>
-
-      <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
+  <section className=" bg-white pb-22" >
+    <div className="">
+      <Carousel />
+      <div className="mt-[71px] mb-[50px] grid h-[135vh] w-full grid-cols-2 gap-7 pl-[40px] pr-[40px]">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="videos/feature-2.mp4"
+            src="videos/feature-22.mp4"
             title={
               <>
                 F<b>oo</b>tball
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description=""
             isComingSoon
           />
         </BentoTilt>
@@ -150,26 +141,6 @@ const Features = () => (
             }
             description=""
             isComingSoon
-          />
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_2">
-          <div className="flex size-full flex-col justify-between bg-blue-500 p-5">
-            <h1 className="bento-title special-font max-w-64 text-black">
-              M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
-            </h1>
-
-            <TiLocationArrow className="m-5 scale-[5] self-end" />
-          </div>
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_2">
-          <video
-            src="videos/feature-5.mp4"
-            loop
-            muted
-            autoPlay
-            className="size-full object-cover object-center"
           />
         </BentoTilt>
       </div>
