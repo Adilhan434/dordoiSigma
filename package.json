@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ibroit.github.io/dordoi-website/",
+  "homepage": "https://github.com/Adilhan434/dordoiSigma/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
