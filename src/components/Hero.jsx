@@ -1,10 +1,5 @@
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
 import { TiLocationArrow } from "react-icons/ti";
-import { useEffect, useRef, useState } from "react";
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Button from "./Button";
 
 // import VideoPreview from "./VideoPreview";
@@ -16,7 +11,7 @@ const Hero = (props) => {
     <div className="relative h-dvh w-screen overflow-x-hidden min-h-screen">
         <div>
                        
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
+        <h1 className="special-font hero-heading absolute bottom-5">
         FUTURE
         </h1>
 
