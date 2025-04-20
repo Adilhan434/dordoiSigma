@@ -25,10 +25,10 @@ const Contact = () => {
           <img src="/img/swordman.webp" alt="" className="w-[250px] rounded mt-[-90px] mb-[-50px]" />
         </div> */}
         <div className="w-auto mt-[100px] ml-[170px]">
-          <ImageClipBox
+          {/* <ImageClipBox
             src="/img/swordman.webp"
             clipClass="w-[200px] h-[0px] absolute md:scale-125 mt-[53px ] mb-[0px]"
-          />
+          /> */}
         </div>
         <div className="absolute -top-40 left-20 w-60 sm:top-1/2 md:left-auto md:right-10 lg:top-20 lg:w-80">
           <ImageClipBox

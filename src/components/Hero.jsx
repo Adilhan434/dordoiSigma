@@ -1,7 +1,7 @@
 import { TiLocationArrow } from "react-icons/ti";
 import React from 'react';
 import Button from "./Button";
-
+import '..//components/qqq.css'
 // import VideoPreview from "./VideoPreview";
 
 const Hero = (props) => {
@@ -17,7 +17,7 @@ const Hero = (props) => {
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
-            <h1 className="special-font hero-heading text-blue-100">
+            <h1 className="h1_hero special-font hero-heading text-blue-100">
               DORD<b></b>OI
             </h1>
 

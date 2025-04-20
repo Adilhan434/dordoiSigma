@@ -12,6 +12,8 @@ import next1 from '/img/next1.jpg';
 import nextGlobal1 from '/img/nextGlobal1.png';
 import nextGlobal2 from '/img/nextGlobal2.png';
 import { VscMute } from "react-icons/vsc";
+import NewFoot from "../components/NewFoot";
+
 
 const Home = () => {
   const video = '/videos/hero-4.mp4';
@@ -127,9 +129,11 @@ const stories = [
 
       <Announcment />
       <Features />
-      <Story />
+      
+     <Story /> <NewFoot  />
       <Links />
-      <Footer />
+      
+      
     </div>
   );
 };
